@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<organization:Organization xmlns:organization="http://documentation.bonitasoft.com/organization-xml-schema/1.1">
+  <customUserInfoDefinitions/>
+  <users>
+    <user userName="auditor1">
+      <firstName>Auditor</firstName>
+      <lastName>Externo</lastName>
+      <manager></manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">auditor1</password>
+      <customUserInfoValues/>
+    </user>
+  </users>
+  <roles>
+    <role name="external_auditor">
+      <displayName>Auditor Externo</displayName>
+    </role>
+    <role name="system">
+      <displayName>Sistema</displayName>
+    </role>
+  </roles>
+  <groups>
+    <group name="member">
+      <displayName>member</displayName>
+    </group>
+  </groups>
+  <memberships>
+    <membership>
+      <userName>auditor1</userName>
+      <roleName>system</roleName>
+      <groupName>member</groupName>
+    </membership>
+    <membership>
+      <userName>auditor1</userName>
+      <roleName>external_auditor</roleName>
+      <groupName>member</groupName>
+    </membership>
+  </memberships>
+</organization:Organization>
